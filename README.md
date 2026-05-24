@@ -1,9 +1,9 @@
-# Knly Interpreter
+# Knly Language 
 
 Knly, Programlama Dilleri ve Prensipleri dönem ödevi için tasarlanan bir yorumlanan programlama dilidir.
 Bu aşamada proje Lexer, Parser ve Evaluator modullerini içerir.
 
-## Dil Özellikleri
+## Dil Özellikleri 🔧
 
 - Değişken tanımlama: `new`
 - Koşul: `ya`, `yoksa`
@@ -15,7 +15,7 @@ Bu aşamada proje Lexer, Parser ve Evaluator modullerini içerir.
 - Veri tipleri: `nmb`, `str`, `tf`, `mono`
 - Boolean değerleri: `yes`, `nope`
 
-## Gramer
+## Gramer 📄
 
 ```ebnf
 program        ::= statement* EOF ;
@@ -60,7 +60,7 @@ say i → 0, i < 5, i → i + 1 `
 `
 ```
 
-## Klasör Yapisi
+## Klasör Yapısı 📁
 
 - `src/lexer.py`: Kaynak kodu token dizisine çevirir.
 - `src/parser.py`: Token dizisini gramer kurallarina göre AST'ye çevirir.
@@ -69,7 +69,7 @@ say i → 0, i < 5, i → i + 1 `
 - `tests/`: Lexer, Parser ve Evaluator birim testleri.
 - `ai_prompts.md`: Yapay zeka kullanim kaydi.
 
-## Çalistirma
+## Çalıstırma ⚙️
 
 Lexer için:
 
