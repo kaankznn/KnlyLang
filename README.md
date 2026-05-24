@@ -4,6 +4,7 @@
 ![Lexer](https://img.shields.io/badge/Lexer-Ready-16a34a?style=flat-square)
 ![Parser](https://img.shields.io/badge/Parser-Ready-2563eb?style=flat-square)
 ![Evaluator](https://img.shields.io/badge/Evaluator-Ready-7c3aed?style=flat-square)
+![Knly](https://img.shields.io/badge/Language-Knly-0f766e?style=flat-square)
 
 Knly, Programlama Dilleri ve Prensipleri dönem ödevi için tasarlanan bir yorumlanan programlama dilidir.
 Bu aşamada proje Lexer, Parser ve Evaluator modullerini içerir.
