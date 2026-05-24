@@ -1,0 +1,15 @@
+new nmb toplam → 0|
+new nmb i → 0|
+
+say i → 0, i < 5, i → i + 1 `
+    toplam → toplam + i|
+`
+
+ya toplam > 5 `
+    wput{"toplam buyuk"}|
+` yoksa `
+    wput{"toplam kucuk veya esit"}|
+`
+
+log{"bitti", toplam}|
+

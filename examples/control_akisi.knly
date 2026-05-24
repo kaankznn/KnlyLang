@@ -1,0 +1,15 @@
+new nmb derece → 18|
+new tf yagmur → nope|
+
+ya derece >→ 20 `
+    wput{"hava sicak"}|
+` yoksa `
+    wput{"hava serin"}|
+`
+
+continue derece < 22 `
+    derece → derece + 1|
+`
+
+rapor{"son derece", derece, yagmur}|
+

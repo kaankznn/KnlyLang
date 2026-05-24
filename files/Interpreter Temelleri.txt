@@ -1,0 +1,76 @@
+Dil Adı: Knly
+
+> Dil Hakkında:
+
+new → değişken tanımlama keyword’ü
+ya → koşul
+yoksa → else (koşul)
+say → for
+continue → while
+wput → çıktı
+
+-----------------------------
+
+-> Değişken Tanımlama Kuralları
+
+Değişken isimleri harfle mi başlamalı? -> Harf veya `_` ile başlamalı.
+Sayıyla başlayabilir mi? -> Hayır, başlayamaz. Ancak ilk karakterden sonra gelebilir.
+
+Örnek -> Bunlar geçersiz `1x, @abc`.
+
+String nasıl yazılıyor? -> String sadece "..." ile yazılır ve içinde normal metin bulunabilir.
+Escape karakter var mı? -> Hayır, yok.
+
+Boolean değerleri neler olacak? -> yes, nope olacak. Yani `tf asd → yes` olarak tanımlanabilir.
+
+Blok tam nasıl başlıyor ve bitiyor? -> Aynı sembol (backtick '`') hem başlangıç hem de blok bitişi için kullanılacak.
+
+-----------------------------
+
+-> Primitive Variable Types
+5 → nmb
+"asd" → str
+yes, nope → tf
+'x' → mono
+
+-----------------------------
+
+-> Operatörler
+
+→ → atama
+<,> → karşılaştırma
++ - * / → matematik
+
+→→ -> == → eşit eşit 
+|→ -> != → eşit değil
+>→ -> >= → büyük eşit
+<→ -> <= → küçük eşit
+
+-----------------------------
+
+-> Blok İşlemleri
+
+| → satır bitirme
+
+`
+   ...
+`
+→ Blok
+
+-----------------------------
+
+-> Fonksiyon Kullanımı / Tanımlama
+
+xyz{"x küçüktür"}| → fonksiyon çağırma
+
+-----------------------------
+
+-> Öncelikler
+
+Parantez olacak mı? Evet. Matematikte ve koşulda öncelikte parantez ve normal Python'daki gibi önceliklendirme olacak Matematik için.
+	Örnek: `x → (2 + 3) * 4|`
+
+
+
+
+

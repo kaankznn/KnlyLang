@@ -1,0 +1,15 @@
+new nmb x → (2 + 3) * 4|
+new str mesaj → "x kucuktur"|
+new tf sonuc → yes|
+new mono harf → 'k'|
+
+ya x <→ 20 `
+    wput{"x kucuktur"}|
+` yoksa `
+    wput{"x buyuk veya esittir"}|
+`
+
+continue x < 25 `
+    x → x + 1|
+`
+

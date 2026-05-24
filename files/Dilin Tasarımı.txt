@@ -1,0 +1,94 @@
+Lexer: Kaynak kodu tokenlara ayırır.
+Parser: Tokenları gramer kurallarına göre AST’ye çevirir.
+Evaluator: AST’yi semantic kontrollerle birlikte çalıştırır.
+
+	Lexer Ne Yapar?
+
+Kod: new nmb x → 5|
+
+KEYWORD      new
+TYPE         nmb
+IDENTIFIER   x
+OPERATOR     →
+NUMBER       5
+PUNCTUATION  |
+
+-> lexer.py içinde TokenType enum'u var.
+
+KEYWORD
+TYPE
+IDENTIFIER
+NUMBER
+STRING
+BOOLEAN
+MONO
+OPERATOR
+PUNCTUATION
+EOF
+
+Burada tanımlı. 
+
+-> Token sınıfı ayrıca şunları saklar:
+
+type     token türü
+lexeme   kaynak kodda görünen hali
+literal  gerçek değeri
+line     satır numarası
+column   sütun numarası
+
+Ayrıca hatalı karakterleri de yakalar. Mesela `new nmb 1x → 5|` geçersiz. Lexer hatalı görür.
+
+--> Lexer'ı çalıştırmak için: python src\lexer.py examples\lexer_demo.knly
+
+
+	Parser Ne Yapar?
+
+Parser, Lexer’dan gelen token listesini alır ve “bu kod Knly dilinin gramerine uygun mu?” diye kontrol eder. Eğer uygunsa AST üretir.
+Bu kodun ağaç şeklindeki temsilidir. Bilgisayar için kodu çalıştırmaya daha uygun bir yapıya dönüştürür.
+
+Kod: `new nmb x → (2 + 3) * 4|`
+
+Sonuçta Parser şöyle bir AST ağacı üretir.
+
+VariableDeclaration
+  type: nmb
+  name: x
+  initializer:
+    BinaryExpression *
+      left:
+        GroupingExpression
+          BinaryExpression +
+            2
+            3
+      right:
+        4
+
+AST için sınıflar:
+
+Program
+VariableDeclaration
+Assignment
+OutputStatement
+FunctionCallStatement
+IfStatement
+WhileStatement
+ForStatement
+BinaryExpression
+UnaryExpression
+GroupingExpression
+LiteralExpression
+VariableExpression
+
+Ayrıca AST işlem önceliği olaylarına da bakan yer.
+
+
+	Evaluator Ne Yapar?
+
+Evaluator, Parser’ın ürettiği AST’yi alır ve gerçekten çalıştırır. Bu aşama sadece çalıştırma değil, aynı zamanda semantic analiz aşamasıdır. 
+Semantic analiz, kod gramer olarak doğru olsa bile mantıksal olarak doğru mu diye bakar.
+
+Mesela `new nmb x → "metin"|` kodu Parser'dan geçer ancak Evaluator'dan geçmez. Sözdizimi doğru ama semantic olarak hatalı.
+++ nmb değişkenine str değer atıyor çünkü kod.
+
+
+
