@@ -4,7 +4,7 @@ Bu dosyada Programlama Dilleri ve Prensipleri (BIL206) dönem ödevi kapsamında
 
 ---
 
-## 2026-05-23 — Ödev Gereksinimlerini Anlama ve Başlangıç Planı
+## 2026-05-01 — Ödev Gereksinimlerini Anlama ve Başlangıç Planı
 
 ### Kullanılan Araç
 ChatGPT 5.5
@@ -27,7 +27,7 @@ Bu dosya ayrıca proje iöerisinde bulunuyor, bu dilin kurallarının belirlendi
 
 ---
 
-## 2026-05-23 — Knly Dilinin Temel Yapısını Belirleme
+## 2026-05-02 — Knly Dilinin Temel Yapısını Belirleme
 
 ### Kullanılan Araç
 ChatGPT 5.5 
@@ -65,7 +65,7 @@ Knly dili için aşağıdaki temel tasarım kurallarını verdim:
 
 ---
 
-## 2026-05-23 — Syntax ve EBNF Yapısının Oluşturulması
+## 2026-05-05 — Syntax ve EBNF Yapısının Oluşturulması
 
 ### Kullanılan Araç
 ChatGPT 5.5
@@ -98,7 +98,7 @@ Bu grammar yapısını README dosyasında kullanılmak üzere projeye ekledim.
 
 ---
 
-## 2026-05-23 — Lexer Aşaması İçin Kod Desteği
+## 2026-05-16 — Lexer Aşaması İçin Kod Desteği
 
 ### Kullanılan Araç
 ChatGPT 5.5
@@ -141,7 +141,7 @@ Ayrıca satır ve kolon bilgisi içeren hata mesajları ekledim.
 
 ---
 
-## 2026-05-23 — Lexer Kodunun Test Edilmesi ve Düzenlenmesi
+## 2026-05-17 — Lexer Kodunun Test Edilmesi ve Düzenlenmesi
 
 ### Kullanılan Araç
 ChatGPT Codex 5.5 Extra High
@@ -167,7 +167,7 @@ Lexer çıktısının parser aşaması için uygun hale gelmesini sağladım.
 
 ---
 
-## 2026-05-23 — Parser Aşaması İçin Kod Desteği
+## 2026-05-17 — Parser Aşaması İçin Kod Desteği
 
 ### Kullanılan Araç
 ChatGPT Codex 5.5 Extra High
@@ -202,7 +202,7 @@ Parser kodu Knly EBNF yapısına göre kontrol ettim ve lexer çıktısıyla uyu
 
 ---
 
-## 2026-05-23 — Parser Kodunu Anlama ve Projeye Uygulama
+## 2026-05-18 — Parser Kodunu Anlama ve Projeye Uygulama
 
 ### Kullanılan Araç
 ChatGPT Codex 5.5 Extra High
@@ -220,7 +220,7 @@ Lexer kaynak kodu tokenlara ayırır. Parser bu tokenları Knly dilinin grammar 
 
 ---
 
-## 2026-05-23 — Evaluator ve Semantic Analysis Aşaması İçin Kod Desteği
+## 2026-05-19 — Evaluator ve Semantic Analysis Aşaması İçin Kod Desteği
 
 ### Kullanılan Araç
 ChatGPT Codex 5.5 Extra High
@@ -254,7 +254,7 @@ Evaluator, parser tarafından üretilen AST yapısını çalıştıracak şekild
 
 ---
 
-## 2026-05-23 — Parser ve Evaluator Kodlarının Genel Entegrasyonu
+## 2026-05-22 — Parser ve Evaluator Kodlarının Genel Entegrasyonu
 
 ### Kullanılan Araç
 ChatGPT Codex 5.5 Extra High
