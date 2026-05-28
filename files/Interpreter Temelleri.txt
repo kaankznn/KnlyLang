@@ -69,8 +69,3 @@ xyz{"x küçüktür"}| → fonksiyon çağırma
 
 Parantez olacak mı? Evet. Matematikte ve koşulda öncelikte parantez ve normal Python'daki gibi önceliklendirme olacak Matematik için.
 	Örnek: `x → (2 + 3) * 4|`
-
-
-
-
-
